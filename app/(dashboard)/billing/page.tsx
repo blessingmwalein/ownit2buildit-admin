@@ -16,6 +16,7 @@ import type { PaymentStatus } from "@/types";
 function PayStatusBadge({ status }: { status: PaymentStatus }) {
   const map = {
     COMPLETED: { label: "Completed", variant: "success" as const },
+    SUCCESS: { label: "Completed", variant: "success" as const },
     PENDING: { label: "Pending", variant: "warning" as const },
     FAILED: { label: "Failed", variant: "destructive" as const },
     REFUNDED: { label: "Refunded", variant: "secondary" as const },

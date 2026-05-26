@@ -40,6 +40,7 @@ function getCompanyLabelFromPayment(pay: { company?: { name: string }; companyId
 function PayStatusBadge({ status }: { status: PaymentStatus }) {
   const map: Record<PaymentStatus, { label: string; variant: "success" | "warning" | "destructive" | "secondary" }> = {
     COMPLETED: { label: "Completed", variant: "success" },
+    SUCCESS: { label: "Success", variant: "success" },
     PENDING: { label: "Pending", variant: "warning" },
     FAILED: { label: "Failed", variant: "destructive" },
     REFUNDED: { label: "Refunded", variant: "secondary" },
